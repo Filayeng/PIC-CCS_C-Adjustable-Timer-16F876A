@@ -4,7 +4,7 @@
 
 
 ### Working Prenciple
-> - It is a Adjustable Timer that I developed using the CCS  C to proggamming PIC 16F876A Microcontroller. <br/>
+> - It is an Adjustable Timer that I developed using the CCS C Compiler with PIC16F876A Microcontroller. <br/>
 
 ### Required Link
 > - [PIC 16F876A Features](https://www.microchip.com/en-us/product/PIC16F876A) <br/>
