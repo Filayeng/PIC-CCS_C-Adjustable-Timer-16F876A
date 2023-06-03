@@ -1,5 +1,4 @@
-# CCS_C-Adjustable-Timer-PIC
-It is a Adjustable Timer that I developed using the CCS  C to proggamming PIC 16F876A Microcontroller.
+# PIC - CCS_C - Adjustable - Timer - PIC
 
 <img src="https://media2.giphy.com/media/aFOW3Zoju8zlt6DyTv/giphy.gif" alt="thumbnail" class="center">
 
@@ -7,16 +6,18 @@ It is a Adjustable Timer that I developed using the CCS  C to proggamming PIC 16
 ### Working Prenciple
 > - It is a Adjustable Timer that I developed using the CCS  C to proggamming PIC 16F876A Microcontroller. <br/>
 
-### Required Library
-> - [TM1637 Library](https://github.com/avishorp/TM1637) <br/>
-
 ### Required Link
-> - [Interrupts with Arduino](https://www.arduino.cc/reference/en/language/functions/interrupts/interrupts/) <br/>
+> - [PIC 16F876A Features](https://www.microchip.com/en-us/product/PIC16F876A) <br/>
 
 ### Required Tools
-> - [Arduino IDE](https://www.arduino.cc/en/software) <br/>
-> - Arduino Uno/Mega/Nano <br/> 
-> - Rotary Encoder (4 Wire) <br/>
-> - TM1637 4 Digit Led Display <br/> 
-> - BreadBoard <br/> 
-> - USB Cable <br/>
+> - [PIC C Complier](https://download.cnet.com/CCS-C-Compiler/3000-2212_4-76172170.html) <br/>
+> - PIC 16F876A Microcontroller <br/> 
+> - 7 Segment 4 Digit Display <br/> 
+> - 1 x Buzzer <br/>
+> - 1 x HS Crystal <br/> 
+> - 2 x 22pF Capasitor <br/> 
+> - 3 x 10K Ω Resistor <br/>
+> - 1 x 1K Ω Resistor <br/>
+> - 3 x Push Buttons <br/> 
+> - 1 x LED Diode <br/> 
+> - PIC Programmer <br/>
