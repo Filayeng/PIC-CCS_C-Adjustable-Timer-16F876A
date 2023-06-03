@@ -1,7 +1,3 @@
-//   21. Soru   //
-//  Ömer ÖNAL //
-//    12     //
-
 #include <16f876a.h>
 #fuses HS,NOWDT
 #use delay(clock=20Mhz)
