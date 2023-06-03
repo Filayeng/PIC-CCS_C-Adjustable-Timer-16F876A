@@ -1,7 +1,7 @@
 # CCS_C-Adjustable-Timer-PIC
 It is a Adjustable Timer that I developed using the CCS  C to proggamming PIC 16F876A Microcontroller.
 
-<img src="https://i.giphy.com/media/aFOW3Zoju8zlt6DyTv/giphy.mp4" alt="thumbnail" class="center">
+<img src="https://media2.giphy.com/media/aFOW3Zoju8zlt6DyTv/giphy.gif" alt="thumbnail" class="center">
 
 <video width="320" height="240" controls>
   <source src="[movie.mp4](https://i.giphy.com/media/aFOW3Zoju8zlt6DyTv/giphy.mp4)" type="video/mp4">
