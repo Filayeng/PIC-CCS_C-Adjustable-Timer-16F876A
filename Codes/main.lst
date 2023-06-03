@@ -1,0 +1,302 @@
+CCS PCM C Compiler, Version 5.012, 40078               23-Ara-20 11:13
+
+               Filename:   C:\Users\omero\Desktop\Mikrodenetleyici Sorularý\Soru 21\Kodlar\soru_21.lst
+
+               ROM used:   229 words (3%)
+                           Largest free fragment is 2048
+               RAM used:   14 (4%) at main() level
+                           14 (4%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   034
+0003:  NOP
+.................... //   21. Soru   // 
+.................... //  Ömer ÖNAL // 
+.................... //    12     // 
+....................  
+.................... #include <16f876a.h> 
+.................... ///////////// Standard Header file for the PIC16F876A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F876A 
+0004:  BCF    0A.0
+0005:  BCF    0A.1
+0006:  BCF    0A.2
+0007:  ADDWF  02,F
+0008:  RETLW  3F
+0009:  RETLW  06
+000A:  RETLW  5B
+000B:  RETLW  4F
+000C:  RETLW  66
+000D:  RETLW  6D
+000E:  RETLW  7D
+000F:  RETLW  07
+0010:  RETLW  7F
+0011:  RETLW  67
+0012:  BCF    0A.0
+0013:  BCF    0A.1
+0014:  BCF    0A.2
+0015:  ADDWF  02,F
+0016:  RETLW  BF
+0017:  RETLW  86
+0018:  RETLW  DB
+0019:  RETLW  CF
+001A:  RETLW  E6
+001B:  RETLW  ED
+001C:  RETLW  FD
+001D:  RETLW  87
+001E:  RETLW  FF
+001F:  RETLW  E7
+....................  
+.................... #list 
+....................  
+.................... #fuses HS,NOWDT 
+.................... #use delay(clock=20Mhz) 
+0020:  MOVLW  28
+0021:  MOVWF  04
+0022:  BCF    03.7
+0023:  MOVF   00,W
+0024:  BTFSC  03.2
+0025:  GOTO   033
+0026:  MOVLW  06
+0027:  MOVWF  78
+0028:  CLRF   77
+0029:  DECFSZ 77,F
+002A:  GOTO   029
+002B:  DECFSZ 78,F
+002C:  GOTO   028
+002D:  MOVLW  7B
+002E:  MOVWF  77
+002F:  DECFSZ 77,F
+0030:  GOTO   02F
+0031:  DECFSZ 00,F
+0032:  GOTO   026
+0033:  RETURN
+....................  
+.................... int a,b,c,d,e,f,i; 
+.................... int const sira[10] = {0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x67}; 
+.................... int const siranokta[10] = {0xbf,0x86,0xdb,0xcf,0xe6,0xed,0xfd,0x87,0xff,0xe7}; 
+....................  
+.................... void main(){ 
+0034:  MOVF   03,W
+0035:  ANDLW  1F
+0036:  MOVWF  03
+0037:  MOVLW  FF
+0038:  MOVWF  27
+0039:  BSF    03.5
+003A:  BSF    1F.0
+003B:  BSF    1F.1
+003C:  BSF    1F.2
+003D:  BCF    1F.3
+003E:  MOVLW  07
+003F:  MOVWF  1C
+0040:  BCF    03.7
+....................    set_tris_b(0x00); 
+0041:  MOVLW  00
+0042:  MOVWF  06
+....................    set_tris_c(0x00); 
+0043:  MOVWF  07
+0044:  BCF    03.5
+0045:  MOVWF  27
+....................    while(true){ 
+....................       for(a=0;a<10;a++){ 
+0046:  CLRF   20
+0047:  MOVF   20,W
+0048:  SUBLW  09
+0049:  BTFSS  03.0
+004A:  GOTO   0E3
+....................          for(b=0;b<10;b++){ 
+004B:  CLRF   21
+004C:  MOVF   21,W
+004D:  SUBLW  09
+004E:  BTFSS  03.0
+004F:  GOTO   0E1
+....................             for(c=0;c<6;c++){ 
+0050:  CLRF   22
+0051:  MOVF   22,W
+0052:  SUBLW  05
+0053:  BTFSS  03.0
+0054:  GOTO   0DF
+....................                for(d=0;d<10;d++){ 
+0055:  CLRF   23
+0056:  MOVF   23,W
+0057:  SUBLW  09
+0058:  BTFSS  03.0
+0059:  GOTO   0DD
+....................                   for(e=0;e<6;e++){ 
+005A:  CLRF   24
+005B:  MOVF   24,W
+005C:  SUBLW  05
+005D:  BTFSS  03.0
+005E:  GOTO   0DB
+....................                      for(f=0;f<10;f++){ 
+005F:  CLRF   25
+0060:  MOVF   25,W
+0061:  SUBLW  09
+0062:  BTFSS  03.0
+0063:  GOTO   0D9
+....................                         for(i=0;i<59;i++){                 //82 
+0064:  CLRF   26
+0065:  MOVF   26,W
+0066:  SUBLW  3A
+0067:  BTFSS  03.0
+0068:  GOTO   0D7
+....................                             output_c(0x3e); 
+0069:  MOVLW  00
+006A:  MOVWF  27
+006B:  BSF    03.5
+006C:  CLRF   07
+006D:  MOVLW  3E
+006E:  BCF    03.5
+006F:  MOVWF  07
+....................                             output_b(sira[f]); 
+0070:  MOVF   25,W
+0071:  CALL   004
+0072:  MOVWF  28
+0073:  BSF    03.5
+0074:  CLRF   06
+0075:  BCF    03.5
+0076:  MOVF   28,W
+0077:  MOVWF  06
+....................                             delay_ms(2); 
+0078:  MOVLW  02
+0079:  MOVWF  28
+007A:  CALL   020
+....................                             output_c(0x3d); 
+007B:  MOVLW  00
+007C:  MOVWF  27
+007D:  BSF    03.5
+007E:  CLRF   07
+007F:  MOVLW  3D
+0080:  BCF    03.5
+0081:  MOVWF  07
+....................                             output_b(sira[e]); 
+0082:  MOVF   24,W
+0083:  CALL   004
+0084:  MOVWF  28
+0085:  BSF    03.5
+0086:  CLRF   06
+0087:  BCF    03.5
+0088:  MOVF   28,W
+0089:  MOVWF  06
+....................                             delay_ms(2); 
+008A:  MOVLW  02
+008B:  MOVWF  28
+008C:  CALL   020
+....................                             output_c(0x3b); 
+008D:  MOVLW  00
+008E:  MOVWF  27
+008F:  BSF    03.5
+0090:  CLRF   07
+0091:  MOVLW  3B
+0092:  BCF    03.5
+0093:  MOVWF  07
+....................                             output_b(siranokta[d]); 
+0094:  MOVF   23,W
+0095:  CALL   012
+0096:  MOVWF  28
+0097:  BSF    03.5
+0098:  CLRF   06
+0099:  BCF    03.5
+009A:  MOVF   28,W
+009B:  MOVWF  06
+....................                             delay_ms(2); 
+009C:  MOVLW  02
+009D:  MOVWF  28
+009E:  CALL   020
+....................                             output_c(0x37); 
+009F:  MOVLW  00
+00A0:  MOVWF  27
+00A1:  BSF    03.5
+00A2:  CLRF   07
+00A3:  MOVLW  37
+00A4:  BCF    03.5
+00A5:  MOVWF  07
+....................                             output_b(sira[c]); 
+00A6:  MOVF   22,W
+00A7:  CALL   004
+00A8:  MOVWF  28
+00A9:  BSF    03.5
+00AA:  CLRF   06
+00AB:  BCF    03.5
+00AC:  MOVF   28,W
+00AD:  MOVWF  06
+....................                             delay_ms(2); 
+00AE:  MOVLW  02
+00AF:  MOVWF  28
+00B0:  CALL   020
+....................                             output_c(0x2f); 
+00B1:  MOVLW  00
+00B2:  MOVWF  27
+00B3:  BSF    03.5
+00B4:  CLRF   07
+00B5:  MOVLW  2F
+00B6:  BCF    03.5
+00B7:  MOVWF  07
+....................                             output_b(siranokta[b]); 
+00B8:  MOVF   21,W
+00B9:  CALL   012
+00BA:  MOVWF  28
+00BB:  BSF    03.5
+00BC:  CLRF   06
+00BD:  BCF    03.5
+00BE:  MOVF   28,W
+00BF:  MOVWF  06
+....................                             delay_ms(2); 
+00C0:  MOVLW  02
+00C1:  MOVWF  28
+00C2:  CALL   020
+....................                             output_c(0x1f); 
+00C3:  MOVLW  00
+00C4:  MOVWF  27
+00C5:  BSF    03.5
+00C6:  CLRF   07
+00C7:  MOVLW  1F
+00C8:  BCF    03.5
+00C9:  MOVWF  07
+....................                             output_b(sira[a]); 
+00CA:  MOVF   20,W
+00CB:  CALL   004
+00CC:  MOVWF  28
+00CD:  BSF    03.5
+00CE:  CLRF   06
+00CF:  BCF    03.5
+00D0:  MOVF   28,W
+00D1:  MOVWF  06
+....................                             delay_ms(2); 
+00D2:  MOVLW  02
+00D3:  MOVWF  28
+00D4:  CALL   020
+00D5:  INCF   26,F
+00D6:  GOTO   065
+....................                             }}}}}}} 
+00D7:  INCF   25,F
+00D8:  GOTO   060
+00D9:  INCF   24,F
+00DA:  GOTO   05B
+00DB:  INCF   23,F
+00DC:  GOTO   056
+00DD:  INCF   22,F
+00DE:  GOTO   051
+00DF:  INCF   21,F
+00E0:  GOTO   04C
+00E1:  INCF   20,F
+00E2:  GOTO   047
+00E3:  GOTO   046
+....................    } 
+.................... } 
+00E4:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

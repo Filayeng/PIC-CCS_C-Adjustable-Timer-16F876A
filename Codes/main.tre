@@ -1,0 +1,15 @@
+읕soru_21
+   읕main  0/177  Ram=1
+      쳐@cinit1  (Inline)  Ram=0
+      쳐@const608  0/14  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@const608  0/14  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@const611  0/14  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@const608  0/14  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@const611  0/14  Ram=0
+      쳐@delay_ms1  0/20  Ram=1
+      쳐@const608  0/14  Ram=0
+      읕@delay_ms1  0/20  Ram=1

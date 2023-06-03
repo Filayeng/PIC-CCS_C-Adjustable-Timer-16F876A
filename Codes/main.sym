@@ -1,0 +1,69 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     a
+021     b
+022     c
+023     d
+024     e
+025     f
+026     i
+027     @TRIS_C
+028     @delay_ms1.P1
+028     main.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  sira.call
+000008  sira.data
+000012  siranokta.call
+000016  siranokta.data
+000020  @delay_ms1
+000034  main
+000034  @cinit1
+000040  @cinit2
+
+Project Directory:
+    C:\Users\omero\Desktop\Mikrodenetleyici Sorularý\Soru 21\Kodlar\
+
+Project Files:
+    soru_21.c                                               [23-Ara-20 11:13  CRC=9EDD037E]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f876a.h [10-Eyl-13 16:33  CRC=C7E3DE3D]
+
+Source signature=2EA4BFF8
+
+Units:
+    soru_21 (main)
+
+Compiler Settings:
+    Processor:      PIC16F876A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   soru_21.xsym
+    Errors:      soru_21.err
+    Ext Symbols: soru_21.esym
+    INHX8:       soru_21.hex
+    Symbols:     soru_21.sym
+    List:        soru_21.lst
+    Debug/COFF:  soru_21.cof
+    Project:     soru_21.ccspjt
+    Call Tree:   soru_21.tre
+    Statistics:  soru_21.STA

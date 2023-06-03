@@ -1,0 +1,21 @@
+[PROJECT]
+Target=soru_21.hex
+Processor_Text=PIC16F876A
+CCSVersion=5.012
+Compiler=PCM
+[Target Data]
+FileList=soru_21.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[soru_21.c]
+Type=4
+[mru-list]
+1=soru_21.c
+[Opened Files]
+1=soru_21.c
+2=
+3=..\..\Soru 1\Kodlar\soru_1.c
+4=
+[Units]
+Count=1
+1=soru_21 (main)
